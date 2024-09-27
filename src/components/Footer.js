@@ -16,7 +16,6 @@ function Footer() {
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
         </div>
         <div className="App-Footer-menu">
             <ul />
