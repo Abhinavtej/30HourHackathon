@@ -37,13 +37,6 @@ jobs:
         with:
           node-version: '16'
 
-      # Install dependencies and build the React app
-      - name: Install dependencies and build React app
-        run: |
-          cd react-frontend # Adjust this path based on where your React app is located
-          npm install
-          npm run build
-
       # Zip both React build and PHP app for deployment
       - name: Zip artifact for deployment
         run: |
