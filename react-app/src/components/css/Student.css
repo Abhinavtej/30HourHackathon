@@ -1,0 +1,16 @@
+.App-student {
+    color: #fff;
+    margin-bottom: 7em;
+    padding: 0 7em;
+}
+
+.students {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+span {
+    font-weight: bold;
+}
