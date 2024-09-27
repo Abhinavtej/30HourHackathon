@@ -22,7 +22,7 @@ function Navbar() {
     }, []);
 
     const handleRegisterClick = () => {
-        window.location.href = "/register.php";
+        window.location.href = "https://30hrhackathon-mruh.azurewebsites.net/register.php";
       };
 
     return (
