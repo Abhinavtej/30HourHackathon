@@ -6,25 +6,35 @@ function Student() {
     <div className='App-student'>
         <h1>Student Co-Ordinators</h1>
         <div className="students">
-            <div className="student">
-                <span>Lorem Ipsum</span>
-                <p>Lorem Ipsum</p>
+            <div className="student-row">
+                <div className="student">
+                    <span>Abhinavtej Reddy</span>
+                    <p>+91 9346095136</p>
+                </div>
+                <div className="student">
+                    <span>SK Fareed Baba</span>
+                    <p>+91 6281688513</p>
+                </div>
             </div>
-            <div className="student">
-                <span>Lorem Ipsum</span>
-                <p>Lorem Ipsum</p>
-            </div>
-            <div className="student">
-                <span>Lorem Ipsum</span>
-                <p>Lorem Ipsum</p>
-            </div>
-            <div className="student">
-                <span>Lorem Ipsum</span>
-                <p>Lorem Ipsum</p>
-            </div>
-            <div className="student">
-                <span>Lorem Ipsum</span>
-                <p>Lorem Ipsum</p>
+            <div className="student-row">
+                <div className="student">
+                    <span>V Ashrith</span>
+                </div>
+                <div className="student">
+                    <span>E Harika</span>
+                </div>
+                <div className="student">
+                    <span>K Sathvika</span>
+                </div>
+                <div className="student">
+                    <span>K Sumanth</span>
+                </div>
+                <div className="student">
+                    <span>Y Vishnu Vardhan</span>
+                </div>
+                <div className="student">
+                    <span>Varshitha Reddy</span>
+                </div>
             </div>
         </div>
     </div>

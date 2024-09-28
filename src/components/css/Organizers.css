@@ -39,3 +39,17 @@
     flex-wrap: wrap;
     gap: 4em;
 }
+
+@media screen and (max-width: 768px) {
+    .App-organizers {
+        margin-bottom: 3em;
+    }
+
+    .organizers-row {
+        gap: 2em;
+    }
+
+    .patrons, .co-convenors {
+        gap: 2em;
+    }
+}

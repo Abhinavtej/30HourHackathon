@@ -6,7 +6,7 @@ import Dept from '../assets/dept.png'
 function HomePage() {
   return (
     <div className='App-HomePage'>
-      <img src={Dept} width={1000} alt="Department" /> <br />
+      <img src={Dept} id='dept' width={1000} alt="Department" /> <br />
       <img src={Title} width={1000} alt="Title" />
     </div>
   )

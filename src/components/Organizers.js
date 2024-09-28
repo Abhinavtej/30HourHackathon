@@ -66,17 +66,17 @@ function Organizers() {
                         <div className="co-convenor">
                             <img src={II_Incharge} className='organizers-image' alt="Dr. S. S. Patnaik - Co-Convenor" />
                             <p>Dr. Gifta Jerith</p>
-                            <p>2nd Year Incharge</p>
+                            <p>2nd Year HoD</p>
                         </div>
                         <div className="co-convenor">
                             <img src={III_Incharge} className='organizers-image' alt="Dr. S. S. Patnaik - Co-Convenor" />
                             <p>Dr. A. SivaRanjani</p>
-                            <p>3rd Year Incharge</p>
+                            <p>3rd Year HoD</p>
                         </div>
                         <div className="co-convenor">
                             <img src={IV_Incharge} className='organizers-image' alt="Dr. S. S. Patnaik - Co-Convenor" />
                             <p>Dr. Sujit Das</p>
-                            <p>4th Year Incharge</p>
+                            <p>4th Year HoD</p>
                         </div>
                     </div>
                 </div>

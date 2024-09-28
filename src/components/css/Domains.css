@@ -9,3 +9,13 @@
 .App-domains {
     margin-bottom: 7em;
 }
+
+@media screen and (max-width: 768px) {
+    .App-domains li {
+        padding: 0 2em;
+    }
+
+    .App-domains {
+        margin-bottom: 3em;
+    }
+}

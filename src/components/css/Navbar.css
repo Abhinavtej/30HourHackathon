@@ -129,21 +129,23 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .App-header {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start */
+        align-items: flex-start;
+        justify-content: space-evenly;
     }
 
     .App-menu {
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: flex-start; /* Align menu items to the start */
-    }
-
-    .App-menu li {
-        margin: 0.5em 0; /* Add space between menu items */
-        margin-right: 0; /* Reset margin-right */
+      display: none;
     }
 
     .App-Register {
-        margin-top: 1em; /* Space above the register button */
+      margin-top: 0.7em;
+      margin-right: 1.5em;
+    }
+
+    .animated-button svg {
+      width: 14px;
+    }
+    .animated-button {
+      font-size: 10px;
     }
 }

@@ -6,3 +6,10 @@
     text-align: justify;
     margin-bottom: 7em;
 }
+
+@media screen and (max-width: 768px) {
+    .App-about p {
+        padding: 0 2em;
+        margin-bottom: 3em;
+    }
+}
