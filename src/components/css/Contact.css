@@ -15,22 +15,31 @@
 .contact-form {
     border: 1px solid;
     border-radius: 8px;
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 
 .contact-form input{
-    padding: 10px 10em;
+    width: 20em;
+    padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid;
 }
 
 .contact-form textarea {
-    padding: 2em 10em;
+    width: 20em;
+    padding: 10px;
     margin: 10px 0;
     resize: none;
     border-radius: 5px;
     border: 1px solid;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -45,10 +54,10 @@
     }
 
     .contact-form input {
-        padding: 10px 5em;
+        padding: 10px 5px;
     }
 
     .contact-form textarea {
-        padding: 2em 5em;
+        padding: 2em 5px;
     }
 }
