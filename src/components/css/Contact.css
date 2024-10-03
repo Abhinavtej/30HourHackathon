@@ -19,7 +19,7 @@
 }
 
 .contact-form input{
-    width: 20em;
+    width: 25em;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -27,12 +27,28 @@
 }
 
 .contact-form textarea {
-    width: 20em;
+    width: 25em;
     padding: 10px;
     margin: 10px 0;
     resize: none;
     border-radius: 5px;
     border: 1px solid;
+}
+
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #004a79;
+    color: #fff;
 }
 
 .contact-info a {
