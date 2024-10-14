@@ -76,4 +76,8 @@
     .contact-form textarea {
         padding: 2em 5px;
     }
+
+    .contact-info {
+        text-align: center;
+    }
 }

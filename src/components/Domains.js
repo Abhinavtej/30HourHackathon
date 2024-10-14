@@ -5,7 +5,7 @@ function Domains() {
   return (
     <div className='App-domains'>
         <h1>Domains</h1>
-        <ul />
+        <ul className='custom-list'>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
         <li>Duis pharetra tortor sit amet ex rhoncus, sed interdum mauris hendrerit.</li>
         <li>Praesent iaculis felis ac dignissim tincidunt.</li>
@@ -13,6 +13,7 @@ function Domains() {
         <li>Fusce ut nibh porta, pretium ligula eget, dictum purus.</li>
         <li>Vivamus tincidunt neque vitae mauris suscipit tincidunt.</li>
         <li>Morbi eget turpis malesuada, posuere massa sit amet, dictum lectus.</li>
+        </ul>
     </div>
   )
 }

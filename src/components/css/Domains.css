@@ -6,6 +6,30 @@
     line-height: 1.5;
 }
 
+
+.custom-list {
+    list-style: none;
+}
+  
+.custom-list li {
+    position: relative;
+}
+  
+.custom-list li::before {
+    content: '';
+    background-image: url('../../assets/thunder.png');
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 0.4em;
+    margin-left: 4em;
+}
+  
+
 .App-domains {
     margin-bottom: 7em;
 }
@@ -17,5 +41,9 @@
 
     .App-domains {
         margin-bottom: 3em;
+    }
+
+    .custom-list li::before {
+        margin-left: 0;
     }
 }
