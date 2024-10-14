@@ -7,28 +7,33 @@
 }
 
 
-.custom-list {
-    list-style: none;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin-top: 3em;
 }
-  
-.custom-list li {
-    position: relative;
+
+.card {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 5em;
+    transition: all 0.5s ease-in-out;
 }
-  
-.custom-list li::before {
-    content: '';
-    background-image: url('../../assets/thunder.png');
-    background-size: 10px 15px;
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 15px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 0.4em;
-    margin-left: 4em;
+
+.card-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-  
+
+.card:hover {
+    transform: scale(1.15);
+}
 
 .App-domains {
     margin-bottom: 7em;
@@ -43,7 +48,12 @@
         margin-bottom: 3em;
     }
 
-    .custom-list li::before {
-        margin-left: 0;
+    .cards {
+        gap: 1em;
+    }
+
+    .card {
+        padding: 0em;
+        margin-bottom: 2em;
     }
 }

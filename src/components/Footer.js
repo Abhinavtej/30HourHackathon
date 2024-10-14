@@ -1,6 +1,6 @@
 import React from 'react'
 import './css/Footer.css'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/title2.png'
 import { Link } from 'react-scroll';
 
 function Footer() {
@@ -10,12 +10,11 @@ function Footer() {
     <div className='App-footer'>
         <div className="App-Footer-logo">
                   <Link to="homepage" smooth={true} duration={500}>
-                    <img src={Logo} alt="Logo" width={200} />
+                    <img src={Logo} alt="Logo" width={300} />
                 </Link>
             <ul />
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
+            <li>2nd Edition of <br /> Malla Reddy University's Ultimate Hackathon</li>
+            <li>Organised by Department of AI & ML</li>
         </div>
         <div className="App-Footer-menu">
             <ul />

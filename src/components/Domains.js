@@ -1,19 +1,23 @@
 import React from 'react'
 import './css/Domains.css'
+import postsData from '../assets/domains.js'
 
 function Domains() {
+  const renderProductCards = () => {
+    return postsData.slice(0, 5).map(post => (
+      <div className="card" id="card" key={post.id} style={{ width: "19rem", marginRight: "1rem", marginBottom: "1rem" }}>
+          <div className="card-contents">
+            <p style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.5em'}}>{post.title}</p>
+          </div>
+      </div>
+    ));
+  };
   return (
     <div className='App-domains'>
         <h1>Domains</h1>
-        <ul className='custom-list'>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Duis pharetra tortor sit amet ex rhoncus, sed interdum mauris hendrerit.</li>
-        <li>Praesent iaculis felis ac dignissim tincidunt.</li>
-        <li>Quisque euismod metus ac justo venenatis, ac dictum augue ultrices.</li>
-        <li>Fusce ut nibh porta, pretium ligula eget, dictum purus.</li>
-        <li>Vivamus tincidunt neque vitae mauris suscipit tincidunt.</li>
-        <li>Morbi eget turpis malesuada, posuere massa sit amet, dictum lectus.</li>
-        </ul>
+        <div className="cards">
+          {renderProductCards()}
+        </div>
     </div>
   )
 }

@@ -10,15 +10,15 @@
     margin-bottom: 7em;
 }
 
-.custom-list {
+.guidelines-custom-list {
     list-style: none;
 }
   
-.custom-list li {
+.guidelines-custom-list li {
     position: relative;
 }
   
-.custom-list li::before {
+.guidelines-custom-list li::before {
     content: '';
     background-image: url('../../assets/thunder.png');
     background-size: 10px 15px;
@@ -42,7 +42,7 @@
         margin-bottom: 3em;
     }
 
-    .custom-list li::before {
+    .guidelines-custom-list li::before {
         margin-left: 0;
     }
 }

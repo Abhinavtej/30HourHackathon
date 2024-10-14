@@ -5,7 +5,7 @@ function Guidelines() {
   return (
     <div className='App-guidelines'>
         <h1>Guidelines</h1>
-        <ul className="custom-list">
+        <ul className="guidelines-custom-list">
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
         <li>Duis pharetra tortor sit amet ex rhoncus, sed interdum mauris hendrerit.</li>
         <li>Praesent iaculis felis ac dignissim tincidunt.</li>
