@@ -39,6 +39,12 @@
     margin-bottom: 7em;
 }
 
+.App-domains h3 {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .App-domains li {
         padding: 0 2em;
