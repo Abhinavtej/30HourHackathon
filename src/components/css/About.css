@@ -1,0 +1,15 @@
+.App-about p {
+    color: #fff;
+    padding: 0 7em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 7em;
+}
+
+@media screen and (max-width: 768px) {
+    .App-about p {
+        padding: 0 2em;
+        margin-bottom: 3em;
+    }
+}

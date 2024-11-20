@@ -1,0 +1,21 @@
+.App-HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 9em;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .App-HomePage {
+        margin-bottom: 0;
+    }
+    .App-HomePage img {
+        width: 100%;
+    }
+    .App-HomePage #dept {
+        width: 90%;
+    }
+}

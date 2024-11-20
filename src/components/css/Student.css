@@ -1,0 +1,36 @@
+.App-student {
+    color: #fff;
+    margin-bottom: 7em;
+    padding: 0 20em;
+}
+
+.students {
+    text-align: center;
+    display: block;
+}
+
+span {
+    font-weight: bold;
+}
+
+.student-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .App-student {
+        margin-bottom: 3em;
+        padding: 0 2em;
+    }
+
+    .App-student h1 {
+        font-size: 1.6em;
+    }
+
+    .student-row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,48 @@
+.App-guidelines li {
+    color: #fff;
+    padding: 0 7em;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.App-guidelines {
+    margin-bottom: 7em;
+}
+
+.guidelines-custom-list {
+    list-style: none;
+}
+  
+.guidelines-custom-list li {
+    position: relative;
+}
+  
+.guidelines-custom-list li::before {
+    content: '';
+    background-image: url('../../assets/thunder.png');
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 0.4em;
+    margin-left: 4em;
+}
+  
+
+@media screen and (max-width: 768px) {
+    .App-guidelines li {
+        padding: 0 2em;
+    }
+
+    .App-guidelines {
+        margin-bottom: 3em;
+    }
+
+    .guidelines-custom-list li::before {
+        margin-left: 0;
+    }
+}
