@@ -5,11 +5,7 @@ const postsData = [
     },
     {
       "id": 2,
-<<<<<<< HEAD
-      "title": "E-Governance"
-=======
       "title": "Fintech"
->>>>>>> 38258ad7f (Initial commit)
     },
     {
       "id": 3,
@@ -21,11 +17,7 @@ const postsData = [
     },
     {
       "id": 5,
-<<<<<<< HEAD
-      "title": "UN 17 Sustainable Goals"
-=======
       "title": "Smart Automation"
->>>>>>> 38258ad7f (Initial commit)
     }
 ];
 

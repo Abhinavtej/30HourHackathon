@@ -7,13 +7,8 @@ import VC from '../assets/organizers/vskreddy.png';
 import Registrar from '../assets/organizers/anjaneyulu.png';
 import DeanAIML from '../assets/organizers/deanaiml.png';
 import II_Incharge from '../assets/organizers/giftajerith.png';
-<<<<<<< HEAD
-import III_Incharge from '../assets/organizers/sivaranjani.png';
-import IV_Incharge from '../assets/organizers/sujitdas.png';
-=======
 import III_Incharge from '../assets/organizers/thiyagarajan.png';
 import IV_Incharge from '../assets/organizers/preethicm.png';
->>>>>>> 38258ad7f (Initial commit)
 
 function Organizers() {
   return (
@@ -57,11 +52,7 @@ function Organizers() {
                 </div>
                 <div className="convenor">
                     <h2>Convenor</h2>
-<<<<<<< HEAD
-                    <img src={DeanAIML} className='organizers-image' alt="Dr. S. S. Patnaik - Director, NIT Rourkela" />
-=======
                     <img src={DeanAIML} className='organizers-image' alt="Dr. Thayyaba Khatoon - Dean AI&ML" />
->>>>>>> 38258ad7f (Initial commit)
                     <p>Dr. Thayyaba Khatoon</p>
                     <p>Dean AI&ML</p>
                 </div>
@@ -73,21 +64,6 @@ function Organizers() {
                     <h2>Co-Convenors</h2>
                     <div className="co-convenors">
                         <div className="co-convenor">
-<<<<<<< HEAD
-                            <img src={II_Incharge} className='organizers-image' alt="Dr. S. S. Patnaik - Co-Convenor" />
-                            <p>Dr. Gifta Jerith</p>
-                            <p>2nd Year HoD</p>
-                        </div>
-                        <div className="co-convenor">
-                            <img src={III_Incharge} className='organizers-image' alt="Dr. S. S. Patnaik - Co-Convenor" />
-                            <p>Dr. A. SivaRanjani</p>
-                            <p>3rd Year HoD</p>
-                        </div>
-                        <div className="co-convenor">
-                            <img src={IV_Incharge} className='organizers-image' alt="Dr. S. S. Patnaik - Co-Convenor" />
-                            <p>Dr. Sujit Das</p>
-                            <p>4th Year HoD</p>
-=======
                             <img src={II_Incharge} className='organizers-image' alt="Dr. Gifta Jerith" />
                             <p>Dr. Gifta Jerith</p>
                         </div>
@@ -98,7 +74,6 @@ function Organizers() {
                         <div className="co-convenor">
                             <img src={IV_Incharge} className='organizers-image' alt="Prof. Preethi CM" />
                             <p>Prof. Preethi CM</p>
->>>>>>> 38258ad7f (Initial commit)
                         </div>
                     </div>
                 </div>

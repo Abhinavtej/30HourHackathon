@@ -15,20 +15,12 @@ function Student() {
                     <span>SK Fareed Baba</span>
                     <p>+91 6281688513</p>
                 </div>
-<<<<<<< HEAD
-            </div>
-            <div className="student-row">
-                <div className="student">
-                    <span>V Ashrith</span>
-                </div>
-=======
                 <div className="student">
                     <span>V Ashrith</span>
                     <p>+91 7013128225</p>
                 </div>
             </div>
             <div className="student-row">
->>>>>>> 38258ad7f (Initial commit)
                 <div className="student">
                     <span>E Harika</span>
                 </div>
