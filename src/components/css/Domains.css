@@ -39,6 +39,15 @@
     margin-bottom: 7em;
 }
 
+<<<<<<< HEAD
+=======
+.App-domains h3 {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+>>>>>>> temp-branch
 @media screen and (max-width: 768px) {
     .App-domains li {
         padding: 0 2em;
