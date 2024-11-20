@@ -12,11 +12,6 @@ function Domains() {
       </div>
     ));
   };
-<<<<<<< HEAD
-  return (
-    <div className='App-domains'>
-        <h1>Domains</h1>
-=======
   const ProblemStatements = () => {
     window.location.href = "#";
   };
@@ -24,7 +19,6 @@ function Domains() {
     <div className='App-domains'>
         <h1>Domains</h1>
         <h3 onClick={ProblemStatements}>&rarr; Problem Statements are Live Now &larr;</h3>
->>>>>>> temp-branch
         <div className="cards">
           {renderProductCards()}
         </div>
