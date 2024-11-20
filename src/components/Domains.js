@@ -13,7 +13,7 @@ function Domains() {
     ));
   };
   const ProblemStatements = () => {
-    window.location.href = "#";
+    window.location.href = "google.com";
   };
   return (
     <div className='App-domains'>
