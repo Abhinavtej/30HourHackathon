@@ -6,12 +6,12 @@
     height: 100vh;
     margin-bottom: 9em;
     color: white;
-    position: relative; /* Required for the pseudo-element */
+    position: relative;
     background-image: url('../../assets/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden; /* Ensures no extra content spills out */
+    overflow: hidden;
 }
 
 .App-HomePage::before {
@@ -30,15 +30,66 @@
     z-index: 2;
 }
 
+.App-HomePage img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
 
 @media screen and (max-width: 768px) {
     .App-HomePage {
         margin-bottom: 0;
     }
     .App-HomePage img {
-        width: 100%;
+        width: 90%;
     }
     .App-HomePage #dept {
         width: 90%;
     }
+}
+
+.App-HomePage h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+}
+
+.App-HomePage p {
+    font-size: 1.5em;
+    text-align: center;
+    color: #dcdcdc;
+    margin-top: 1em;
+    line-height: 1.6;
 }
