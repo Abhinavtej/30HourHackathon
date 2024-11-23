@@ -1,65 +1,91 @@
-.App-domains li {
-    color: #fff;
-    padding: 0 7em;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 1.5;
-}
-
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2em;
-    margin-top: 3em;
-}
-
-.card {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 1em;
-    padding: 1em;
-    margin-bottom: 5em;
-    transition: all 0.5s ease-in-out;
-}
-
-.card-contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card:hover {
-    transform: scale(1.15);
-}
-
+/* App domain margin */
 .App-domains {
-    margin-bottom: 7em;
+  margin-bottom: 7em;
 }
 
-.App-domains h3 {
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
+/* Main container styling */
+.domains-container {
+  font-family: 'Montserrat', sans-serif;
+  color: #e0e6ed;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 25px;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Tabs section */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #102a54; /* Muted dark blue */
+  color: #e0e6ed; /* Light blue-gray */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #1c3866; /* Slightly brighter blue on hover */
+  color: #ffffff; /* Pure white text on hover */
+}
+
+.tab-button.active {
+  background-color: #274a7a; /* Highlighted blue for active tab */
+  color: #ffffff;
+}
+
+/* Table styling */
+.domains-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  color: #e0e6ed; /* Matches text color for consistency */
+}
+
+.domains-table th,
+.domains-table td {
+  border: 1px solid #1a355a; /* Border matches the gradient tones */
+  padding: 10px;
+  text-align: left;
+}
+
+.domains-table th {
+  background-color: #14284a; /* Darker blue for header */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.domains-table tr:nth-child(even) {
+  background-color: #10203d; /* Alternating row color: deep blue */
+}
+
+.domains-table tr:hover {
+  background-color: #1a2f52; /* Subtle blue hover effect */
+}
+
+/* Responsive styling for smaller screens */
 @media screen and (max-width: 768px) {
-    .App-domains li {
-        padding: 0 2em;
-    }
+  .domains-container {
+    padding: 20px;
+  }
 
-    .App-domains {
-        margin-bottom: 3em;
-    }
+  .tab-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
 
-    .cards {
-        gap: 1em;
-    }
-
-    .card {
-        padding: 0em;
-        margin-bottom: 2em;
-    }
+  .domains-table th,
+  .domains-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
 }

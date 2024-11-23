@@ -20,8 +20,8 @@ function App() {
         <div className="guidelines"><Guidelines /></div>
         <div className="domains"><Domains /></div>
         <Organizers />
-        <Student />
-        <div className="contact"><Contact /></div>
+        <div className="contact"><Student /></div>
+        <Contact />
         <Footer />
     </div>
   );

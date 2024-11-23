@@ -1,29 +1,53 @@
-import React from 'react'
-import './css/Domains.css'
-import postsData from '../assets/domains.js'
+import React, { useState } from "react";
+import "./css/Domains.css";
+import domainsData from "../assets/domains.js";
 
 function Domains() {
-  const renderProductCards = () => {
-    return postsData.slice(0, 5).map(post => (
-      <div className="card" id="card" key={post.id} style={{ width: "19rem", marginRight: "1rem", marginBottom: "1rem" }}>
-          <div className="card-contents">
-            <p style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.5em'}}>{post.title}</p>
-          </div>
-      </div>
-    ));
-  };
-  // const ProblemStatements = () => {
-  //   window.location.href = "/";
-  // };
+  const [selectedDomain, setSelectedDomain] = useState("AI in Education");
+
+  const handleDomainChange = (domain) => setSelectedDomain(domain);
+
   return (
     <div className='App-domains'>
-        <h1>Domains</h1>
-        {/* <h3 onClick={ProblemStatements}>&rarr; Problem Statements are Live Now &larr;</h3> */}
-        <div className="cards">
-          {renderProductCards()}
-        </div>
+        <h1>Problem Statements</h1>
+        <div className="domains-container">
+      {/* Tabs for selecting domains */}
+      <div className="tabs">
+        {Object.keys(domainsData).map((domain) => (
+          <button
+            key={domain}
+            className={`tab-button ${selectedDomain === domain ? "active" : ""}`}
+            onClick={() => handleDomainChange(domain)}
+          >
+            {domain.toUpperCase()}
+          </button>
+        ))}
+      </div>
+
+      {/* Table to display domain problems */}
+      <table className="domains-table">
+        <thead>
+          <tr>
+            <th>SNo</th>
+            <th>Problem ID</th>
+            <th>Problem Title</th>
+            <th>Domain</th>
+          </tr>
+        </thead>
+        <tbody>
+          {domainsData[selectedDomain].map((item, index) => (
+            <tr key={item.id}>
+              <td>{index + 1}</td>
+              <td>{item.id}</td>
+              <td>{item.title}</td>
+              <td>{selectedDomain}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  )
+    </div>
+  );
 }
 
-export default Domains
+export default Domains;

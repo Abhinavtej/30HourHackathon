@@ -36,7 +36,7 @@ function Navbar() {
                 <ul />
                     <li><Link to="about" smooth={true} duration={500} offset={-150}>About</Link></li>
                     <li><Link to="guidelines" smooth={true} duration={500} offset={-150}>Guidelines</Link></li>
-                    <li><Link to="domains" smooth={true} duration={500} offset={-150}>Domains</Link></li>
+                    <li><Link to="domains" smooth={true} duration={500} offset={-150}>Problem Statements</Link></li>
                     <li><Link to="contact" smooth={true} duration={500} offset={-150}>Contact</Link></li>
             </div>
             <div className="App-Register">
