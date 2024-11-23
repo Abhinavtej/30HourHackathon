@@ -74,6 +74,10 @@
 
 /* Responsive styling for smaller screens */
 @media screen and (max-width: 768px) {
+  .App-domains {
+    margin: 0 1em 5em 1em;
+  }
+
   .domains-container {
     padding: 20px;
   }
@@ -81,6 +85,11 @@
   .tab-button {
     padding: 8px 15px;
     font-size: 14px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .domains-table th,
