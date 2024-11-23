@@ -11,6 +11,10 @@
     z-index: 1000;
 }
 
+.App-logo img {
+  cursor: pointer;
+}
+
 .App-menu {
     list-style: none;
     display: flex;
@@ -33,7 +37,7 @@
 }
 
 .App-menu a:hover {
-    color: rgba(255, 255, 255, 0.7); /* Lighter color on hover */
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .animated-button {
@@ -96,12 +100,12 @@
   }
   
   .animated-button:hover svg {
-    fill: #ffffdd;
+    fill: #ffffff;
   }
   
   .animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px #ff7d33;
+    box-shadow: 0 0 0 4px;
   }
   
   .animated-button:hover .circle {

@@ -22,7 +22,7 @@ function Navbar() {
     }, []);
 
     const handleRegisterClick = () => {
-        window.location.href = "https://forms.gle/VHSxmETtVPs8BMp58";
+        window.location.href = "#";
       };
 
     return (

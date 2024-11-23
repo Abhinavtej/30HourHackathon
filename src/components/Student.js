@@ -16,11 +16,26 @@ function Student() {
                     <p>+91 6281688513</p>
                 </div>
                 <div className="student">
-                    <span>V Ashrith</span>
-                    <p>+91 7013128225</p>
+                    <span>Vishnuvardhan Reddy</span>
+                    <p>+91 9392700430</p>
+                </div>
+                <div className="student">
+                    <span>Harshavardhan</span>
+                    <p>+91 7569460743</p>
+                </div>
+                <div className="student">
+                    <span>Venkatesh</span>
+                    <p>+91 7207436307</p>
+                </div>
+                <div className="student">
+                    <span>Lokesh Reddy</span>
+                    <p>+91 7569162986</p>
                 </div>
             </div>
             <div className="student-row">
+                <div className="student">
+                    <span>V Ashrith</span>
+                </div>
                 <div className="student">
                     <span>E Harika</span>
                 </div>

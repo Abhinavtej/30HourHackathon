@@ -12,13 +12,13 @@ function Domains() {
       </div>
     ));
   };
-  const ProblemStatements = () => {
-    window.location.href = "google.com";
-  };
+  // const ProblemStatements = () => {
+  //   window.location.href = "/";
+  // };
   return (
     <div className='App-domains'>
         <h1>Domains</h1>
-        <h3 onClick={ProblemStatements}>&rarr; Problem Statements are Live Now &larr;</h3>
+        {/* <h3 onClick={ProblemStatements}>&rarr; Problem Statements are Live Now &larr;</h3> */}
         <div className="cards">
           {renderProductCards()}
         </div>
