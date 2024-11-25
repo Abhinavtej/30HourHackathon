@@ -1,0 +1,79 @@
+.faq-section {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff; /* Stand out on a dark background */
+}
+
+.faq-container {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #0b3061, #1a2e4d, #0a1944);
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Lighter border */
+    cursor: pointer;
+    overflow: hidden; /* Prevents content spill */
+    transition: max-height 0.3s ease, transform 0.3s ease; /* Smooth expand/collapse */
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: #fff; /* White text on dark */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #274a7a;
+    color: #fff; /* Highlight text */
+}
+
+.faq-question h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.faq-question span {
+    font-size: 1.2rem;
+    color: #fff; /* Matches hover text */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0; /* Initially hidden */
+    padding: 0 20px;
+    background: #102d4c; /* Slightly darker for contrast */
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ddd; /* Softer white for readability */
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust height based on your content */
+    padding: 15px 20px;
+}
+
+.faq-item.active .faq-question span {
+    transform: rotate(180deg); /* Rotate icon when expanded */
+    color: #fff; /* Highlighted icon color */
+}

@@ -1,11 +1,25 @@
 .App-contact {
-    margin-bottom: 7em;
+    margin-bottom: 5em;
     color: #fff;
+}
+
+.App-contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 25px;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #0b3061, #1a2e4d, #0a1944);
 }
 
 .contacts {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 15em;
 }
 
 .App-contact h1 {
@@ -60,7 +74,7 @@
 
 @media screen and (max-width: 768px) {
     .App-contact {
-        margin-bottom: 3em;
+        margin: 0 1em 5em 1em;
     }
 
     .contacts {
@@ -69,11 +83,18 @@
         gap: 2em;
     }
 
+    .contact-form {
+        max-width: 20em;
+        padding: 2em 15px;
+    }
+
     .contact-form input {
-        padding: 10px 5px;
+        width: 20em;
+        padding: 10px auto;
     }
 
     .contact-form textarea {
+        width: 20em;
         padding: 2em 5px;
     }
 

@@ -6,28 +6,6 @@
     height: 100vh;
     margin-bottom: 9em;
     color: white;
-    position: relative;
-    background-image: url('../../assets/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-.App-HomePage::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.App-HomePage > * {
-    position: relative;
-    z-index: 2;
 }
 
 .App-HomePage img {
@@ -92,4 +70,27 @@
     color: #dcdcdc;
     margin-top: 1em;
     line-height: 1.6;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .App-HomePage {
+        background-image: url(../../assets/bg.jpg); /* Ensure the path is correct */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 5em;
+        z-index: 0;
+    }
+
+    .App-HomePage::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
 }

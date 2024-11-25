@@ -5,6 +5,7 @@ function Student() {
   return (
     <div className='App-student'>
         <h1>Student Co-Ordinators</h1>
+        <div className="App-student-container">
         <div className="students">
             <div className="student-row">
                 <div className="student">
@@ -16,42 +17,42 @@ function Student() {
                     <p>+91 6281688513</p>
                 </div>
                 <div className="student">
-                    <span>Vishnuvardhan Reddy</span>
+                    <span>V Ashrith</span>
                     <p>+91 9392700430</p>
-                </div>
-                <div className="student">
-                    <span>Harshavardhan</span>
-                    <p>+91 7569460743</p>
-                </div>
-                <div className="student">
-                    <span>Venkatesh</span>
-                    <p>+91 7207436307</p>
-                </div>
-                <div className="student">
-                    <span>Lokesh Reddy</span>
-                    <p>+91 7569162986</p>
                 </div>
             </div>
             <div className="student-row">
                 <div className="student">
-                    <span>V Ashrith</span>
-                </div>
-                <div className="student">
                     <span>E Harika</span>
                 </div>
                 <div className="student">
-                    <span>K Sathvika</span>
+                    <span>B Sai Thanmai</span>
                 </div>
                 <div className="student">
-                    <span>K Sumanth</span>
+                    <span>Venkatesh</span>
                 </div>
+                <div className="student">
+                    <span>Sai Pranay</span>
+                </div>
+            </div>
+            <div className="student-row">
                 <div className="student">
                     <span>Y Vishnu Vardhan</span>
                 </div>
                 <div className="student">
-                    <span>Varshitha Reddy</span>
+                    <span>Michael Benedict</span>
+                </div>
+                <div className="student">
+                    <span>P Meghana</span>
+                </div>
+                <div className="student">
+                    <span>Divya Rana</span>
+                </div>
+                <div className="student">
+                    <span>Tanish Bamothra</span>
                 </div>
             </div>
+        </div>
         </div>
     </div>
   )

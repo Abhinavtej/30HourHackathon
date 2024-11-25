@@ -1,9 +1,20 @@
 .App-guidelines li {
     color: #fff;
-    padding: 0 7em;
+    padding: 0 1.5em;
     font-weight: 500;
     text-align: justify;
     line-height: 1.5;
+}
+
+.App-Guidelines-container {
+    display: flex;
+    align-items: center;
+    padding: 40px 10px;
+    margin: 20px auto;
+    border-radius: 25px;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #0b3061, #1a2e4d, #0a1944);
 }
 
 .App-guidelines {
@@ -13,9 +24,18 @@
 .guidelines-custom-list {
     list-style: none;
 }
-  
+
+.guidelines-custom-list ul {
+    list-style: none;
+}
+
+.guidelines-custom-list ul li::before {
+    background-image: none;
+}
+
 .guidelines-custom-list li {
     position: relative;
+    margin-bottom: 1em;
 }
   
 .guidelines-custom-list li::before {
@@ -29,20 +49,24 @@
     left: 0;
     top: 0;
     margin-top: 0.4em;
-    margin-left: 4em;
 }
   
 
 @media screen and (max-width: 768px) {
     .App-guidelines li {
         padding: 0 2em;
+        font-size: 10px;
     }
 
     .App-guidelines {
-        margin-bottom: 3em;
+        margin: 0 1em 5em 1em;
     }
 
     .guidelines-custom-list li::before {
         margin-left: 0;
+    }
+
+    .guidelines-custom-list ul {
+        padding: 0;
     }
 }

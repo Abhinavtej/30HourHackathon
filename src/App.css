@@ -1,8 +1,46 @@
+/* General styles for the app */
 .App {
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+/* Body with fixed background and overlay layer */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed; /* Fixed background for larger screens */
+}
+
+/* Overlay layer using pseudo-element */
+body::before {
+  content: "";
+  position: fixed; /* Ensures it stays fixed like the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black layer */
+  z-index: -1; /* Ensures it stays below all other content */
 }
 
 h1 {
   text-align: center;
   color: #fff;
+  margin: 20px 0;
+  position: relative; /* Keeps text above the overlay */
+  z-index: 1; /* Ensures text stays visible */
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    background-image: none;
+    background: linear-gradient(135deg, #0b3061, #1a2e4d, #0a1944);
+  }
 }

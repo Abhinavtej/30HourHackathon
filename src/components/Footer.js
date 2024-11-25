@@ -2,6 +2,7 @@ import React from 'react'
 import './css/Footer.css'
 import Logo from '../assets/title2.png'
 import { Link } from 'react-scroll';
+import { FaInstagram, FaGlobe, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -18,10 +19,22 @@ function Footer() {
         </div>
         <div className="App-Footer-menu">
             <ul />
-                    <li><Link to="about" smooth={true} duration={500} offset={-150}>About</Link></li>
-                    <li><Link to="guidelines" smooth={true} duration={500} offset={-150}>Guidelines</Link></li>
-                    <li><Link to="domains" smooth={true} duration={500} offset={-150}>Domains</Link></li>
-                    <li><Link to="contact" smooth={true} duration={500} offset={-150}>Contact</Link></li>
+            <li>
+              <FaInstagram /> 
+              <a href="https://hacknirvana.openinapp.co/insta" target='blank_'><span>@hacknirvana_aimlmruh</span></a>
+            </li>
+            <li>
+              <FaInstagram />
+              <a href="https://aimlmruh.openinapp.co/insta" target='blank_'><span>@aiml_mruh</span></a>
+            </li>
+            <li>
+              <FaGlobe />
+              <a href="https://mallareddyuniversity.ac.in" target='blank_'><span>Malla Reddy University</span></a>
+            </li>
+            <li>
+              <FaYoutube />
+              <a href="https://aimlmruh.openinapp.co/yt" target='blank_'><span>AIML Mruh</span></a>
+            </li>
         </div>
     </div>
   </div>

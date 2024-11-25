@@ -1,15 +1,67 @@
-.App-about p {
-    color: #fff;
-    padding: 0 7em;
-    line-height: 1.5;
-    font-weight: 500;
-    text-align: justify;
+.App-about {
     margin-bottom: 7em;
 }
 
-@media screen and (max-width: 768px) {
+.App-about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 25px;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #0b3061, #1a2e4d, #0a1944);
+}
+
+/* Styling for paragraph */
+.App-about p {
+    color: #fff;
+    padding: 0 50px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .App-about-container {
+        padding: 30px;
+        flex-direction: column; /* Stacks content vertically */
+    }
+
     .App-about p {
-        padding: 0 2em;
-        margin-bottom: 3em;
+        padding: 0 20px;
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .App-about {
+        margin: 0 1em 5em 1em;
+    }
+    
+    .App-about-container {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .App-about p {
+        padding: 0 15px;
+        margin-bottom: 2em; /* Reduce space below paragraphs */
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .App-about-container {
+        padding: 15px;
+        max-width: 90%; /* Allow for more space on mobile */
+    }
+
+    .App-about p {
+        padding: 0 10px;
+        font-size: 0.9rem; /* Even smaller font size on very small screens */
     }
 }
