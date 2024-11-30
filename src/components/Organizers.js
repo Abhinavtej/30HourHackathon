@@ -4,7 +4,7 @@ import ChiefPatron from '../assets/organizers/mallareddy.png';
 import Secretary from '../assets/organizers/mahenderreddy.png';
 import President from '../assets/organizers/bhadrareddy.webp';
 import VC from '../assets/organizers/vskreddy.png';
-import Registrar from '../assets/organizers/anjaneyulu.png';
+import Registrar from '../assets/organizers/registrar.png';
 import DeanAIML from '../assets/organizers/deanaiml.png';
 import II_Incharge from '../assets/organizers/giftajerith.png';
 import III_Incharge from '../assets/organizers/thiyagarajan.png';
@@ -44,8 +44,8 @@ function Organizers() {
                             <p>Vice Chancellor</p>
                         </div>
                         <div className="patron">
-                            <img src={Registrar} className='organizers-image' alt="Dr. M. Anjaneyulu - Registrar" />
-                            <p>Dr. M. Anjaneyulu</p>
+                            <img src={Registrar} className='organizers-image' alt="Dr. S. Sudheer Kumar - Registrar" />
+                            <p>Dr. S. Sudheer Kumar</p>
                             <p>Registrar</p>
                         </div>
                     </div>

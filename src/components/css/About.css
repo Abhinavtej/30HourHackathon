@@ -4,9 +4,10 @@
 
 .App-about-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 40px;
+    flex-direction: column;
+    padding: 30px;
     margin: 20px auto;
     border-radius: 25px;
     max-width: 1200px;
@@ -14,10 +15,17 @@
     background: linear-gradient(135deg, #0b3061, #1a2e4d, #0a1944);
 }
 
+.App-about-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 50px;
+}
+
 /* Styling for paragraph */
 .App-about p {
     color: #fff;
-    padding: 0 50px;
+    padding: 0 40px;
     line-height: 1.5;
     font-weight: 500;
     text-align: justify;
@@ -51,6 +59,14 @@
         padding: 0 15px;
         margin-bottom: 2em; /* Reduce space below paragraphs */
         font-size: 0.95rem; /* Slightly smaller font size */
+    }
+    .App-about-container div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .App-about-container img {
+        margin: 1em;
     }
 }
 

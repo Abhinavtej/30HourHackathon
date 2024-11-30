@@ -1,0 +1,203 @@
+.agenda-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    padding-top: 7em;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .timeline-day-header {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    background: #1a2e4d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #0b3061;
+    z-index: 0;
+  }
+  
+  .timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 0;
+    background: #0b3061;
+    z-index: 1;
+    transition: height 0.3s ease-out;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+  }
+  
+  .timeline-item.left {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  .timeline-item.right {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .timeline-item .timeline-line {
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background: #1a2e4d;
+    z-index: 2;
+    transition: width 0.3s ease-out, background-color 0.3s ease-out;
+  }
+  
+  .timeline-item.left .timeline-line {
+    left: auto;
+    right: 0.5%;
+  }
+  
+  .timeline-item.right .timeline-line {
+    left: 0.5%;
+    right: auto;
+  }
+  
+  .timeline-item-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  
+  .timeline-item-details {
+    background: #0b3061;
+    border-radius: 8px;
+    padding: 25px 0 10px 0;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .timeline-item-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .timeline-item-time {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .timeline-item.active .timeline-item-details {
+    background: #0b3061;
+    transform: scale(1.05);
+  }
+  
+  .timeline-item.active .timeline-item-details h3,
+  .timeline-item.active .timeline-item-time {
+    color: #fff;
+  }
+  
+  .timeline-item.left.active .timeline-line,
+  .timeline-item.right.active .timeline-line {
+    background: #0b3061;
+  }
+  
+  .timeline-item.active .timeline-line {
+    width: calc(50% - 30px);
+  }
+
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+}
+
+.timeline-item.left .timeline-line {
+    left: auto;
+    right: 0.5%;
+}
+
+.timeline-item.right .timeline-line {
+    left: 0.5%;
+    right: auto;
+}
+
+@media (max-width: 768px) {
+  .agenda-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0; /* Reduced margin for mobile */
+  }
+
+  .timeline-item .timeline-line {
+    display: none; /* Hide the timeline line on mobile */
+  }
+
+  .timeline-item-details {
+    width: 100%;
+    max-width: 400px; /* Set a max-width for readability */
+    margin: 10px 0;
+    padding: 20px 15px; /* Adjust padding for mobile */
+    box-shadow: none; /* Remove shadow for a cleaner look */
+  }
+
+  .timeline-item-details h3 {
+    font-size: 16px; /* Adjust title size for mobile */
+  }
+
+  .timeline-item-time {
+    font-size: 12px; /* Adjust time size for mobile */
+  }
+
+  .timeline-day-header {
+    font-size: 20px; /* Adjust header font size for mobile */
+    margin: 30px 0;
+    width: 80%;
+    padding: 10px 0; /* Adjust padding for mobile */
+  }
+}

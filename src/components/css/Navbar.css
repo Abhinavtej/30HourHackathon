@@ -116,25 +116,74 @@
   
 
 /* Responsive Design */
+/* Updated Mobile Design */
 @media screen and (max-width: 768px) {
-    .App-header {
-        align-items: flex-start;
-        justify-content: space-evenly;
-    }
+  .App-header {
+      flex-direction: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+  }
 
-    .App-menu {
+  .animated-button {
+    display: none;
+  }
+
+  .App-menu {
       display: none;
-    }
+      flex-direction: column;
+      width: 100%;
+      background: linear-gradient(135deg, #0b3061, #1a2e4d, #0a1944);
+      color: #fff;
+      margin: 2.5em auto;
+      border-radius: 25px;
+      max-width: 400px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 60px;
+      left: auto;
+      padding: 0 0 1em 0;
+      z-index: 999;
+  }
 
-    .App-Register {
-      margin-top: 0.7em;
-      margin-right: 1.5em;
-    }
+  .App-menu.show {
+      display: flex;
+  }
 
-    .animated-button svg {
-      width: 14px;
-    }
-    .animated-button {
-      font-size: 10px;
-    }
+  .App-menu li {
+      margin: 0;
+      padding: 1em 1.5em;
+      font-size: 16px;
+  }
+
+  .App-menu a {
+      color: #fff;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+      margin-right: 1em;
+  }
+
+  .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+  }
+
+  .hamburger.active div:nth-child(1) {
+      transform: rotate(45deg) translateY(8px);
+  }
+
+  .hamburger.active div:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+      transform: rotate(-45deg) translateY(-8px);
+  }
 }
+

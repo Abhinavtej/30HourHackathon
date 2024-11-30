@@ -26,18 +26,7 @@ function Student() {
                     <span>E Harika</span>
                 </div>
                 <div className="student">
-                    <span>B Sai Thanmai</span>
-                </div>
-                <div className="student">
-                    <span>Venkatesh</span>
-                </div>
-                <div className="student">
                     <span>Sai Pranay</span>
-                </div>
-            </div>
-            <div className="student-row">
-                <div className="student">
-                    <span>Y Vishnu Vardhan</span>
                 </div>
                 <div className="student">
                     <span>Michael Benedict</span>
@@ -46,10 +35,21 @@ function Student() {
                     <span>P Meghana</span>
                 </div>
                 <div className="student">
+                    <span>B Sai Thanmai</span>
+                </div>
+            </div>
+            <div className="student-row">
+                <div className="student">
+                    <span>Y Vishnu Vardhan</span>
+                </div>
+                <div className="student">
+                    <span>Venkatesh</span>
+                </div>
+                <div className="student">
                     <span>Divya Rana</span>
                 </div>
                 <div className="student">
-                    <span>Tanish Bamothra</span>
+                    <span>Tanisha Bamothra</span>
                 </div>
             </div>
         </div>

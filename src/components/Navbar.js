@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../assets/logo.png';
 import './css/Navbar.css';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             const header = document.querySelector(".App-header");
@@ -21,25 +23,37 @@ function Navbar() {
         };
     }, []);
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     const handleRegisterClick = () => {
         // window.location.href = "https://forms.gle/Rs2B2QtocHNqWEuT6";
+    };
+
+    const closeMenu = () => {
+        setMenuOpen(false); // Close the menu when a link is clicked
     };
 
     return (
         <div className="App-header">
             <div className="App-logo">
-                <Link to="homepage" smooth={true} duration={500} offset={-150}>
+                <Link to="/" smooth={true} onClick={closeMenu}>
                     <img src={Logo} alt="Logo" width={200} />
                 </Link>
             </div>
-            <div className="App-menu">
+            <div className="hamburger" onClick={toggleMenu}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div className={`App-menu ${menuOpen ? "show" : ""}`}>
                 <ul/>
-                    <li><Link to='ca' smooth={true} duration={500} offset={-150}>CA</Link></li>
-                    <li><Link to="guidelines" smooth={true} duration={500} offset={-150}>Guidelines</Link></li>
-                    <li><Link to="domains" smooth={true} duration={500} offset={-150}>Problem Statements</Link></li>
-                    <li><Link to="contact" smooth={true} duration={500} offset={-150}>Contact</Link></li>
-                    <li><Link to="faq" smooth={true} duration={500} offset={-150}>FAQ</Link></li>
-                    
+                    <li><Link to="/agenda" onClick={closeMenu}>Agenda</Link></li>
+                    <li><Link to='/campus-ambassador' onClick={closeMenu}>CA</Link></li>
+                    <li><Link to="/guidelines" onClick={closeMenu}>Guidelines</Link></li>
+                    <li><Link to="/domains" onClick={closeMenu}>Problem Statements</Link></li>
+                    <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
             </div>
             <div className="App-Register">
                 <button onClick={handleRegisterClick} className="animated-button">
