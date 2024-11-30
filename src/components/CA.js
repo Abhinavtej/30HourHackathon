@@ -11,9 +11,6 @@ function CA() {
         </p>
       <div className="app-ca-guidelines">
         <h2>Hackathon Ambassador Guidelines</h2>
-        <p>
-          Please read the following guidelines carefully. By agreeing to participate, you acknowledge and consent to these terms:
-        </p>
         <ul>
           <li>
             As a campus ambassador, you are responsible for promoting the hackathon event through various channels (social media, word of mouth, posters, etc.).

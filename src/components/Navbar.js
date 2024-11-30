@@ -28,7 +28,7 @@ function Navbar() {
     };
 
     const handleRegisterClick = () => {
-        // window.location.href = "https://forms.gle/Rs2B2QtocHNqWEuT6";
+        window.location.href = "https://forms.gle/Rs2B2QtocHNqWEuT6";
     };
 
     const closeMenu = () => {
