@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import './assets/fonts/fonts.css';
 import Navbar from './components/Navbar';
@@ -9,24 +10,36 @@ import Domains from './components/Domains';
 import Guidelines from './components/Guidelines';
 import Contact from './components/Contact';
 import Agenda from './components/Agenda';
+import Spinner from './components/Spinner';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000); // Set to false after 3 seconds
+    return () => clearTimeout(timer); // Cleanup on unmount
+  }, []);
+
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/campus-ambassador" element={<CA/>} />
-          <Route path="/domains" element={<Domains />} />
-          <Route path="/guidelines" element={<Guidelines />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/agenda" element={<Agenda />} />
-          <Route path="*" element={<HomePage />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      {loading ? (
+        <Spinner /> // Show spinner while loading
+      ) : (
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/campus-ambassador" element={<CA />} />
+            <Route path="/domains" element={<Domains />} />
+            <Route path="/guidelines" element={<Guidelines />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/agenda" element={<Agenda />} />
+            <Route path="*" element={<HomePage />} />
+          </Routes>
+          <Footer />
+        </Router>
+      )}
+    </div>
   );
 }
 

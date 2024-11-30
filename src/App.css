@@ -1,11 +1,9 @@
-/* General styles for the app */
 .App {
   font-family: "Montserrat", sans-serif;
   position: relative;
   z-index: 1;
 }
 
-/* Body with fixed background and overlay layer */
 body {
   margin: 0;
   padding: 0;
@@ -15,27 +13,26 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  background-attachment: fixed; /* Fixed background for larger screens */
+  background-attachment: fixed; 
 }
 
-/* Overlay layer using pseudo-element */
 body::before {
   content: "";
-  position: fixed; /* Ensures it stays fixed like the background */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black layer */
-  z-index: -1; /* Ensures it stays below all other content */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 h1 {
   text-align: center;
   color: #fff;
   margin: 20px 0;
-  position: relative; /* Keeps text above the overlay */
-  z-index: 1; /* Ensures text stays visible */
+  position: relative;
+  z-index: 1;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {

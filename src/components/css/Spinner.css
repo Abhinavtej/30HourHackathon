@@ -1,0 +1,27 @@
+/* Spinner.css */
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;  /* Full viewport height */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it stays on top of all elements */
+}
+
+.blinking-logo {
+  width: 80px; /* Set logo size */
+  animation: blink 1.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% {
+    transform: scale(1);  /* No scaling at the start and end */
+  }
+  50% {
+    transform: scale(1.2); /* Slightly increase size at 50% */
+  }
+}
