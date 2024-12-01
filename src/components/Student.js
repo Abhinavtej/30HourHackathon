@@ -43,6 +43,9 @@ function Student() {
                     <span>Y Vishnu Vardhan</span>
                 </div>
                 <div className="student">
+                    <span>J Thirumal</span>
+                </div>
+                <div className="student">
                     <span>Venkatesh</span>
                 </div>
                 <div className="student">
